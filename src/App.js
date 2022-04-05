@@ -6,8 +6,14 @@ import Onglet2 from '../src/Component/Onglet2/Onglet2';
 import Onglet3 from '../src/Component/Onglet3/Onglet3';
 import Page404 from '../src/Component/Page404/Page404';
 // import Onglet4 from '../src/Component/Onglet4/Onglet4';
-import './App.css';
+
 import Onglet5 from './Component/Onglet5/Onglet5';
+import Onglet6 from './Component/Onglet6/Onglet6';
+import NestedRoutes from './Component/Sous menu/NestedRoutes';
+import SousMenu1 from './Component/Sous-menu-1/Sous-menu-1';
+import SousMenu2 from './Component/Sous-menu-2/Sous-menu-2';
+import SousMenu3 from './Component/Sous-menu-3/Sous-menu-3';
+import './App.css';
 
 function App() {
 
@@ -28,6 +34,12 @@ function App() {
                 {/* <Route path='/Onglet4' element={shouldRedirect ? (<Navigate replace to="/" />) : (<Onglet4 />)} /> */}
                 {/* CINQUIEME TECHNIQUE DE REDIRECTION */}
                 <Route path='/Onglet5' element={underConst.Onglet5 ? <Navigate to='/Onglet2' /> : <Onglet5 />} />
+                <Route path='/Onglet6' element={<Onglet6 />} />
+                <Route path='/NestedRoutes' element={<NestedRoutes />} >
+                        <Route path='Sous-menu-1' element={<SousMenu1 />} />
+                        <Route path='Sous-menu-2' element={<SousMenu2 />} />
+                        <Route path='Sous-menu-3' element={<SousMenu3 />} />
+                    </ Route>
                 <Route path='*' element={<Page404 />} />
             </Routes>
         </>

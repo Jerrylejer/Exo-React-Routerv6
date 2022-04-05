@@ -44,14 +44,28 @@ function Menu() {
                     // class bootstrap + active class CSS
                     className={navInfo => navInfo.isActive ? 'text-warning text-decoration-non pe-3 active' : 'text-warning text-decoration-none  pe-3'}
                 >
-                    Redirection
+                    Redirection 1
                 </NavLink>
                 <NavLink
                     to='/Onglet5'
                     // class bootstrap + active class CSS
+                    className={navInfo => navInfo.isActive ? 'text-warning text-decoration-non pe-3 active' : 'text-warning text-decoration-none pe-3'}
+                >
+                    Redirection 2
+                </NavLink>
+                <NavLink
+                    to='/Onglet6'
+                    // class bootstrap + active class CSS
+                    className={navInfo => navInfo.isActive ? 'text-warning text-decoration-non pe-3 active' : 'text-warning text-decoration-none pe-3'}
+                >
+                    Redirection 5s
+                </NavLink>
+                <NavLink
+                    to='/NestedRoutes'
+                    // class bootstrap + active class CSS
                     className={navInfo => navInfo.isActive ? 'text-warning text-decoration-non active' : 'text-warning text-decoration-none'}
                 >
-                    Onglet5
+                    NestedRoutes
                 </NavLink>
             </div>
         </nav>
