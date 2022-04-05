@@ -25,33 +25,82 @@ function Menu() {
             </div>
 
             <div>
-            <NavLink
+                <NavLink
                     to='/Onglet2'
                     // class bootstrap + active class CSS
-                    className={navInfo => navInfo.isActive ? 'text-warning text-decoration-non pe-3 active' : 'text-warning text-decoration-none pe-3'}
+                    className={(navInfo) =>
+                        navInfo.isActive
+                            ? 'text-warning text-decoration-non pe-3 active'
+                            : 'text-warning text-decoration-none pe-3'
+                    }
                 >
                     Onglet 2
                 </NavLink>
                 <NavLink
                     to='/Onglet3'
                     // class bootstrap + active class CSS
-                    className={navInfo => navInfo.isActive ? 'text-warning text-decoration-non pe-3 active' : 'text-warning text-decoration-none pe-3'}
+                    className={(navInfo) =>
+                        navInfo.isActive
+                            ? 'text-warning text-decoration-non pe-3 active'
+                            : 'text-warning text-decoration-none pe-3'
+                    }
                 >
                     Onglet 3
                 </NavLink>
                 <NavLink
                     to='/Onglet4'
                     // class bootstrap + active class CSS
-                    className={navInfo => navInfo.isActive ? 'text-warning text-decoration-non pe-3 active' : 'text-warning text-decoration-none  pe-3'}
+                    className={(navInfo) =>
+                        navInfo.isActive
+                            ? 'text-warning text-decoration-non pe-3 active'
+                            : 'text-warning text-decoration-none  pe-3'
+                    }
                 >
-                    Redirection
+                    Redirection 1
                 </NavLink>
                 <NavLink
                     to='/Onglet5'
                     // class bootstrap + active class CSS
-                    className={navInfo => navInfo.isActive ? 'text-warning text-decoration-non active' : 'text-warning text-decoration-none'}
+                    className={(navInfo) =>
+                        navInfo.isActive
+                            ? 'text-warning text-decoration-non pe-3 active'
+                            : 'text-warning text-decoration-none pe-3'
+                    }
                 >
-                    Onglet5
+                    Redirection 2
+                </NavLink>
+                <NavLink
+                    to='/Onglet6'
+                    // class bootstrap + active class CSS
+                    className={(navInfo) =>
+                        navInfo.isActive
+                            ? 'text-warning text-decoration-non pe-3 active'
+                            : 'text-warning text-decoration-none pe-3'
+                    }
+                >
+                    Redirection 5s
+                </NavLink>
+                <NavLink
+                    to='/NestedRoutes'
+                    // class bootstrap + active class CSS
+                    className={(navInfo) =>
+                        navInfo.isActive
+                            ? 'text-warning text-decoration-non pe-3 active'
+                            : 'text-warning text-decoration-none pe-3'
+                    }
+                >
+                    NestedRoutes
+                </NavLink>
+                <NavLink
+                    to='/Users'
+                    // class bootstrap + active class CSS
+                    className={(navInfo) =>
+                        navInfo.isActive
+                            ? 'text-warning text-decoration-non active'
+                            : 'text-warning text-decoration-none'
+                    }
+                >
+                    Users
                 </NavLink>
             </div>
         </nav>
